@@ -2,12 +2,14 @@ package transport.TrainPost;
 
 import factory.TransportEnum;
 import lombok.Value;
-import parcel.SmallParcell;
+import parcel.SmallParcel;
 
 @Value
 
-public class SmallTrainPost implements SmallParcell {
-    private TransportEnum transport = TransportEnum.TRAINPOST;
+public class SmallTrainPost implements SmallParcel {
+
+    TransportEnum transport = TransportEnum.TRAINPOST;
+
     @Override
     public int getSize() {
         return 0;

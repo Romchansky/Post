@@ -2,11 +2,13 @@ package transport.AutoPost;
 
 import factory.TransportEnum;
 import lombok.Value;
-import parcel.SmallParcell;
+import parcel.SmallParcel;
 
 @Value
-public class SmallAutoPost implements SmallParcell {
-    private TransportEnum transport = TransportEnum.AUTOPOST;
+public class SmallAutoPost implements SmallParcel {
+
+    TransportEnum transport = TransportEnum.AUTOPOST;
+
     @Override
     public int getSize() {
         return 0;

@@ -2,19 +2,20 @@ package parcel;
 
 import factory.TransportEnum;
 
-public interface Parcell {
+public interface Parcel {
+
     int getSize();
     int getWeight();
 
-    ParcellEnum getParcell();
+    ParcelEnum getParcel();
     TransportEnum getTransport();
 
-    default String createParcell() {
+    default String createParcel() {
         StringBuilder sb = new StringBuilder();
         sb.append("This is")
                 //.append(this.getClass().getSimpleName())
-                .append(getTransport().getName()).append(" ").append(getParcell().getName())
-                .append(" parcell is : ");
+                .append(getTransport().getName()).append(" ").append(getParcel().getName())
+                .append(" parcel is : ");
         sb.append("size =").append(getSize());
         sb.append(", weight =").append(getWeight());
         return sb.toString();

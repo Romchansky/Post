@@ -2,11 +2,12 @@ package transport.AirPost;
 
 import factory.TransportEnum;
 import lombok.Value;
-import parcel.SmallParcell;
+import parcel.SmallParcel;
 
 @Value
-public class SmallAirPost implements SmallParcell {
-    private TransportEnum transport = TransportEnum.AIRPOST;
+public class SmallAirPost implements SmallParcel {
+
+    TransportEnum transport = TransportEnum.AIRPOST;
 
     @Override
     public int getSize() {

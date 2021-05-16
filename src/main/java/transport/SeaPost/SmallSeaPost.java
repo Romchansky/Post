@@ -2,11 +2,13 @@ package transport.SeaPost;
 
 import factory.TransportEnum;
 import lombok.Value;
-import parcel.SmallParcell;
+import parcel.SmallParcel;
 
 @Value
-public class SmallSeaPost implements SmallParcell {
-    private TransportEnum transport = TransportEnum.SEAPOST;
+public class SmallSeaPost implements SmallParcel {
+
+    TransportEnum transport = TransportEnum.SEAPOST;
+
     @Override
     public int getSize() {
         return 0;

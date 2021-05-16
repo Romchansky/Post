@@ -1,28 +1,29 @@
 package factory;
 
-import parcel.LargeParcell;
-import parcel.MediumParcell;
-import parcel.OverSizeParcell;
-import parcel.SmallParcell;
+import parcel.LargeParcel;
+import parcel.MediumParcel;
+import parcel.OverSizeParcel;
+import parcel.SmallParcel;
 
- class AirPostFactory extends PostFactory {
+class AirPostFactory extends PostFactory {
+
     @Override
-    public SmallParcell createSmallParcell() {
+    public SmallParcel createSmallParcel() {
         return null;
     }
 
     @Override
-    public MediumParcell createMediumParcell() {
+    public MediumParcel createMediumParcel() {
         return null;
     }
 
     @Override
-    public LargeParcell createLargeParcell() {
+    public LargeParcel createLargeParcel() {
         return null;
     }
 
     @Override
-    public OverSizeParcell createOverSizeParcell() {
+    public OverSizeParcel createOverSizeParcel() {
         return null;
     }
 }

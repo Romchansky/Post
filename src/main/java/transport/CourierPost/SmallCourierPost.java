@@ -2,11 +2,13 @@ package transport.CourierPost;
 
 import factory.TransportEnum;
 import lombok.Value;
-import parcel.SmallParcell;
+import parcel.SmallParcel;
 
 @Value
-public class SmallCourierPost implements SmallParcell {
-    private TransportEnum transport = TransportEnum.COURIER;
+public class SmallCourierPost implements SmallParcel {
+
+    TransportEnum transport = TransportEnum.COURIER;
+
     @Override
     public int getSize() {
         return 0;

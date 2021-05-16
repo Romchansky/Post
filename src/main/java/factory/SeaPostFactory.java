@@ -1,24 +1,29 @@
 package factory;
 
-import parcel.LargeParcell;
-import parcel.MediumParcell;
-import parcel.OverSizeParcell;
-import parcel.SmallParcell;
+import parcel.LargeParcel;
+import parcel.MediumParcel;
+import parcel.OverSizeParcel;
+import parcel.SmallParcel;
 
- class SeaPostFactory extends PostFactory {
-    public SmallParcell createSmallParcell() {
+class SeaPostFactory extends PostFactory {
+
+    @Override
+    public SmallParcel createSmallParcel() {
         return null;
     }
 
-    public MediumParcell createMediumParcell() {
+    @Override
+    public MediumParcel createMediumParcel() {
         return null;
     }
 
-    public LargeParcell createLargeParcell() {
+    @Override
+    public LargeParcel createLargeParcel() {
         return null;
     }
 
-    public OverSizeParcell createOverSizeParcell() {
+    @Override
+    public OverSizeParcel createOverSizeParcel() {
         return null;
     }
 }

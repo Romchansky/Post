@@ -6,6 +6,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 public enum TransportEnum {
+
     AIRPOST(new AirPostFactory(), "By air post"),
     TRAINPOST(new TrainPostFactory(), "By train post"),
     AUTOPOST(new AutoPostFactory(), "By auto post"),

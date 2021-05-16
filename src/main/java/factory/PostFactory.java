@@ -1,20 +1,21 @@
 package factory;
 
-import parcel.LargeParcell;
-import parcel.MediumParcell;
-import parcel.OverSizeParcell;
-import parcel.SmallParcell;
+import parcel.LargeParcel;
+import parcel.MediumParcel;
+import parcel.OverSizeParcel;
+import parcel.SmallParcel;
 
 public abstract class PostFactory {
+
     public static PostFactory of (TransportEnum selectedTransport) {
         return selectedTransport.getFactory();
     }
 
-    public abstract SmallParcell createSmallParcell();
+    public abstract SmallParcel createSmallParcel();
 
-    public abstract MediumParcell createMediumParcell();
+    public abstract MediumParcel createMediumParcel();
 
-    public abstract LargeParcell createLargeParcell();
+    public abstract LargeParcel createLargeParcel();
 
-    public abstract OverSizeParcell createOverSizeParcell();
+    public abstract OverSizeParcel createOverSizeParcel();
 }
