@@ -1,27 +1,22 @@
 package transport.AirPost;
 
 import factory.TransportEnum;
-import lombok.Value;
-import parcel.SmallParcel;
+import parcel.OverSizeParcel;
 
-@Value
-public class SmallAirPost implements SmallParcel {
-
+public class OverSizeAirPost implements OverSizeParcel {
     TransportEnum transport = TransportEnum.AIRPOST;
-
     @Override
     public int getSize() {
-        return 10*10*10;
+        return 25*25*25;
     }
 
     @Override
     public int getWeight() {
-        return 20;
+        return 100;
     }
 
     @Override
     public TransportEnum getTransport() {
         return transport;
     }
-
 }
